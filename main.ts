@@ -11,11 +11,11 @@ basic.forever(function () {
         datalogger.log(datalogger.createCV("distance", valeur))
         comp = 0
     } else {
-        led.plotBarGraph(
-        Math.map(valeur, 0, 170, 0, 25),
-        0
-        )
         comp += 1
     }
+    led.plotBarGraph(
+    Math.map(valeur, 0, 170, 0, 25),
+    0
+    )
     basic.pause(1000)
 })
